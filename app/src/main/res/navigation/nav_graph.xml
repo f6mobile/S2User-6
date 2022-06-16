@@ -35,5 +35,14 @@
         android:id="@+id/devicesFragment"
         android:name="com.example.masterdemowear.screens.rooms.DevicesFragment"
         android:label="fragment_devices"
-        tools:layout="@layout/fragment_devices" />
+        tools:layout="@layout/fragment_devices" >
+        <action
+            android:id="@+id/action_devicesFragment_to_lightFragment"
+            app:destination="@id/lightFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/lightFragment"
+        android:name="com.example.masterdemowear.screens.rooms.LightFragment"
+        android:label="fragment_light"
+        tools:layout="@layout/fragment_light" />
 </navigation>

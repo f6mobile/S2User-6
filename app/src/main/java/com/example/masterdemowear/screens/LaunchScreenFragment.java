@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.example.masterdemowear.BuildConfig;
 import com.example.masterdemowear.R;
@@ -71,7 +72,7 @@ public class LaunchScreenFragment extends Fragment {
                     @Override
                     public void onFailure(Call<String> call, Throwable t) {
                         Log.e("APP_REG", t.toString());
-                        Snackbar.make(binding.getRoot(), "Error register application", Snackbar.LENGTH_SHORT).show();
+                        Toast.makeText(getContext(), "Error register application", Toast.LENGTH_SHORT).show();
                     }
                 });
 

@@ -62,6 +62,9 @@ public class LoginFragment extends Fragment {
                             }
                         });
             }
+            else {
+                Toast.makeText(getContext(), "Неверный формат почты", Toast.LENGTH_SHORT).show();
+            }
         });
 
 
